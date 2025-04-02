@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para que sea responsive -->
+    <title>Perfil de Usuario</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- Incluye Bootstrap desde un CDN -->
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Incluye el archivo CSS personalizado -->
+</head>
+<body>
+    <header class="arriba"> <!-- Encabezado de la página con clases de Bootstrap para fondo, texto y padding -->
+        <div class="container"> <!-- Contenedor de Bootstrap para centrar el contenido -->
+            <h1 class="text-center">Perfil de Usuario</h1> <!-- Título principal centrado -->
+        </div>
+    </header>
+    
+    <main class="container mt-4"> <!-- Contenido principal de la página con clases de Bootstrap para margen superior -->
+        <section id="profile" class="mb-4"> <!-- Sección de perfil de usuario con margen inferior -->
+            <h2>Datos del Perfil</h2> <!-- Subtítulo de la sección de perfil -->
+            <div class="row"> <!-- Fila de Bootstrap para organizar el contenido en columnas -->
+                <div class="col-md-4"> <!-- Columna de Bootstrap que ocupa 4 espacios en pantallas medianas -->
+                    <img src="../taller/images/fotoperfilema.jpg" alt="Foto de perfil" class="img-fluid rounded-circle"> <!-- Imagen de perfil con clase de Bootstrap para fluidez y bordes redondeados -->
+                </div>
+                <div class="col-md-8"> <!-- Columna de Bootstrap que ocupa 8 espacios en pantallas medianas -->
+                    <table class="table table-striped"> <!-- Tabla con clases de Bootstrap para estilos -->
+                        <thead> <!-- Encabezado de la tabla -->
+                            <tr> <!-- Fila del encabezado -->
+                                <th colspan="2" class="text-center">Información Personal</th> <!-- Encabezado de la tabla con colspan y centrado -->
+                            </tr>
+                        </thead>
+                        <tbody> <!-- Cuerpo de la tabla -->
+                            <tr> <!-- Fila de datos -->
+                                <td>Nombre:</td> <!-- Celda de etiqueta -->
+                                <td>Juan Pérez</td> <!-- Celda de valor -->
+                            </tr>
+                            <tr> <!-- Fila de datos -->
+                                <td>Edad:</td> <!-- Celda de etiqueta -->
+                                <td>30 años</td> <!-- Celda de valor -->
+                            </tr>
+                            <tr> <!-- Fila de datos -->
+                                <td>Correo Electrónico:</td> <!-- Celda de etiqueta -->
+                                <td>juan.perez@example.com</td> <!-- Celda de valor -->
+                            </tr>
+                            <tr> <!-- Fila de datos -->
+                                <td>Teléfono:</td> <!-- Celda de etiqueta -->
+                                <td>+54 9 1234 5678</td> <!-- Celda de valor -->
+                            </tr>
+                            <tr> <!-- Fila de datos -->
+                                <td>Dirección:</td> <!-- Celda de etiqueta -->
+                                <td>Calle Falsa 123, Córdoba, Argentina</td> <!-- Celda de valor -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="container mt-4 text-center"> <!-- Sección de pie de página con clases de Bootstrap para margen superior y centrado de texto -->
+        <p>&copy; 2023 Perfil de Usuario. Todos los derechos reservados.</p> <!-- Texto de derechos reservados -->
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> <!-- Incluye jQuery desde un CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> <!-- Incluye Popper.js desde un CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- Incluye Bootstrap JavaScript desde un CDN -->
+</body>
+</html>

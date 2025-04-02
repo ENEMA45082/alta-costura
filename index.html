@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    
+<head> <!-- Contiene metadatos sobre el documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para que sea responsive -->
+    <title>Alta Costura</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- Incluye Bootstrap desde un CDN -->
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Incluye el archivo CSS personalizado -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> <!-- Incluye EmailJS desde un CDN -->
+
+</head>
+
+<body>
+
+    <header class="arriba"> <!-- Encabezado de la página -->
+
+        <div class="container"> <!-- Contenedor de Bootstrap para centrar el contenido -->
+            <div class="row align-items-center"> <!-- Fila de Bootstrap para organizar el contenido en columnas y centrar verticalmente -->
+                <div class="col-md-4"> <!-- Columna de Bootstrap que ocupa 4 espacios en pantallas medianas -->
+                    <h3 class="tituloo">Bienvenido a Taller de Costuras Marcela Donghi</h3>
+                </div>
+                <div class="col-md-4"> <!-- Columna de Bootstrap que ocupa 4 espacios en pantallas medianas -->
+                    <img src="./view-vintage-sewing-machine.jpg" alt="imagen de costura" class="img-fluid" width="80%">
+                </div>
+                <div class="col-md-4"> <!-- Columna de Bootstrap que ocupa 4 espacios en pantallas medianas -->
+                    <nav class="navbar navbar-expand-lg navbar-light"> <!-- Elemento de navegación con clases de Bootstrap -->
+                        <ul class="nav"> <!-- Lista desordenada con clase de Bootstrap para navegación -->
+                            <li class="nav-item"><a class="nav-link text-white" href="#home">Inicio</a></li> <!-- Enlace a la sección de inicio -->
+                            <li class="nav-item"><a class="nav-link text-white" href="#about">Sobre Nosotros</a></li> <!-- Enlace a la sección sobre nosotros -->
+                            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contacto</a></li> <!-- Enlace a la sección de contacto -->
+                            <li class="nav-item"><a class="nav-link text-white" href="#social">Redes Sociales</a></li> <!-- Enlace a la sección de redes sociales -->
+                            <li class="nav-item"><a href="./perfil.html" class="nav-link text-white">Mis datos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="home" class="container mt-4"> <!-- Sección de inicio con clases de Bootstrap para margen superior -->
+        <h2>Inicio</h2>
+        <table class="table table-striped"> <!-- Tabla con clases de Bootstrap para estilos -->
+            <thead class="cabezatabla">
+                <tr> <!-- Fila del encabezado -->
+                    <th colspan="7" class="text-center">Lista de Prendas</th> <!-- Encabezado de la tabla con colspan y centrado -->
+                </tr>
+                <tr>
+                    <th>Número</th>
+                    <th>Prenda</th>
+                    <th>Estado</th>
+                    <th>Cliente</th>
+                    <th>Precio</th>
+                    <th>Acciones</th> 
+                </tr>
+            </thead>
+            
+            <tbody id="tabla-prendas"> <!-- Cuerpo de la tabla con id para manipulación -->
+                <!-- Las filas de la tabla se agregarán dinámicamente -->
+            </tbody>
+        </table>
+        <form id="form-agregar-prenda" class="mt-4"> <!-- Formulario para agregar prendas -->
+            <div class="form-group"> <!-- Grupo de formulario de Bootstrap -->
+                <label for="numero">Número:</label> <!-- Etiqueta para el campo de número -->
+                <input type="number" class="form-control" id="numero" name="numero" required> <!-- Campo de entrada de número con clase de Bootstrap -->
+            </div>
+            <div class="form-group"> <!-- Grupo de formulario de Bootstrap -->
+                <label for="prenda">Prenda:</label> <!-- Etiqueta para el campo de prenda -->
+                <input type="text" class="form-control" id="prenda" name="prenda" required> <!-- Campo de entrada de texto para la prenda con clase de Bootstrap -->
+            </div>
+            <div class="form-group"> <!-- Grupo de formulario de Bootstrap -->
+                <label for="estado">Estado:</label> <!-- Etiqueta para el campo de estado -->
+                <select class="form-control" id="estado" name="estado" required> <!-- Campo de selección para el estado con clase de Bootstrap -->
+                    <option value="En proceso">En proceso</option> <!-- Opción de estado -->
+                    <option value="Completado">Completado</option> <!-- Opción de estado -->
+                </select>
+            </div>
+            <div class="form-group"> <!-- Grupo de formulario de Bootstrap -->
+                <label for="cliente">Cliente:</label> <!-- Etiqueta para el campo de cliente -->
+                <input type="text" class="form-control" id="cliente" name="cliente" required> <!-- Campo de entrada de texto para el cliente con clase de Bootstrap -->
+            </div>
+            <div class="form-group"> <!-- Grupo de formulario de Bootstrap -->
+                <label for="precio">Precio:</label> <!-- Etiqueta para el campo de precio -->
+                <input type="number" class="form-control" id="precio" name="precio" required> <!-- Campo de entrada de número para el precio con clase de Bootstrap -->
+            </div>
+            <button type="submit" class="boton">Agregar Prenda</button> <!-- Botón para agregar prenda con clase de Bootstrap -->
+        </form>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> <!-- Incluye jQuery desde un CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> <!-- Incluye Popper.js desde un CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- Incluye Bootstrap JavaScript desde un CDN -->
+    <script src="script.js"></script> <!-- Incluye el archivo JavaScript personalizado -->
+
+
+
+    
+    <section id="about" class="container mt-4 text-center"> <!-- Sección sobre nosotros con clases de Bootstrap para margen superior -->
+        <h2>Sobre Nosotros</h2> <!-- Subtítulo de la sección sobre nosotros -->
+        <p>En el año 2005, en un pequeño pero acogedor taller ubicado en el corazón de la ciudad, un emprendimiento de alta costura que surgió del talento y la pasión de Marcela y Julio, una pareja unida tanto por el amor como por su dedicación a la confección artesanal.
+
+            Marcela, una talentosa modista con años de experiencia en diseño de vestidos de gala, y Julio, un desastre perfeccionista con un don para los detalles, decidieron unir sus habilidades y abrir su propio taller. Con una máquina de coser heredada y una gran determinación, comenzaron a crear piezas exclusivas para amigos y conocidos.
+            
+            Con el tiempo, sumaron a sus hijos al negocio, quienes aportaron nuevas ideas e innovaciones tecnológicas sin perder la esencia artesanal del taller. Gracias a esta fusión entre tradición y modernidad, se convirtió en un referente de la alta costura, manteniendo intactos los valores con los que nació: la pasión por la moda, la dedicación al detalle y el trato personalizado con cada cliente.</p> <!-- Párrafo de texto -->
+    </section>
+    <section id="contact" class="container mt-4"> <!-- Sección de contacto con clases de Bootstrap para margen superior -->
+        <h2>Contacto</h2> <!-- Subtítulo de la sección de contacto -->
+        <form id="form-contacto"> <!-- Formulario de contacto -->
+            <div class="form-group"> <!-- Grupo de formulario de Bootstrap -->
+                <label for="name">Nombre:</label> <!-- Etiqueta para el campo de nombre -->
+                <input type="text" class="form-control" id="nombre" name="name" placeholder="Ingrese su nombre"> <!-- Campo de entrada de texto para el nombre con clase de Bootstrap y placeholder -->
+            </div>
+            <div class="form-group"> <!-- Grupo de formulario de Bootstrap -->
+                <label for="email">Correo Electrónico:</label> <!-- Etiqueta para el campo de correo electrónico -->
+                <input type="email" class="form-control" id="correo" name="email" placeholder="Ingrese su correo electrónico"> <!-- Campo de entrada de texto para el correo electrónico con clase de Bootstrap y placeholder -->
+            </div>
+            <div class="form-group"> <!-- Grupo de formulario de Bootstrap -->
+                <label for="phone">Teléfono:</label> <!-- Etiqueta para el campo de teléfono -->
+                <input type="tel" class="form-control" id="telefono" name="phone" placeholder="Ingrese su teléfono"> <!-- Campo de entrada de texto para el teléfono con clase de Bootstrap y placeholder -->
+            </div>
+            <button type="submit" class="boton">Enviar</button> <!-- Botón de envío del formulario con clase de Bootstrap -->
+        </form>
+    </section>
+    <section>
+        <div class="container mt-4"> <!-- Contenedor de Bootstrap para margen superior -->
+            <h2>Redes Sociales</h2> <!-- Subtítulo de la sección de redes sociales -->
+            <ul class="list-inline"> <!-- Lista desordenada con clase de Bootstrap para lista en línea -->
+                <li class="list-inline-item"><a href="https://www.facebook.com/marcela.donghi/" target="_blank">Facebook</a></li> <!-- Enlace a Facebook -->
+                <li class="list-inline-item"><a href="https://www.instagram.com/marceladonghi/" target="_blank">Instagram</a></li> <!-- Enlace a Instagram -->
+                <li class="list-inline-item"><a href="https://wa.link/87seb2">Whatsapp</a></li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <footer class="container mt-4 text-center"> <!-- Sección de pie de página con clases de Bootstrap para margen superior -->
+            <p>&copy; 2023 Emanuel Tejeda. Todos los derechos reservados.</p> <!-- Texto de derechos reservados -->
+        </footer>
+    </section>
+    
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> <!-- Incluye jQuery desde un CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> <!-- Incluye Popper.js desde un CDN -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> <!-- Incluye jQuery desde un CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> <!-- Incluye Popper.js desde un CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- Incluye Bootstrap JavaScript desde un CDN -->
+<script src="script.js"></script> <!-- Incluye el archivo JavaScript personalizado -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> <!-- Incluye jQuery desde un CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> <!-- Incluye Popper.js desde un CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- Incluye Bootstrap JavaScript desde un CDN -->
+<script src="script.js"></script> <!-- Incluye el archivo JavaScript personalizado -->

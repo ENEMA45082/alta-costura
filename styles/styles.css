@@ -1,0 +1,60 @@
+/* styles.css */
+
+
+/* styles.css */
+
+/* Clase para el estado completado */
+.estado-completado {
+    color: green; /* Color verde */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Clase para el estado en proceso */
+.estado-en-proceso {
+    color: red; /* Color rojo */
+    text-align: center; /* Centrar el texto */
+}
+/* Clase para el estado no iniciado */
+/* Cambiar el color de fondo del encabezado */
+html{ --color-defecto: #69c548d8; } /* Color de fondo por defecto */ 
+
+.arriba {
+    background-color: var(--color-defecto); /* Verde */
+    color: white; /* Texto blanco */
+    padding: 10px;
+    text-align: center;
+
+}
+.boton{
+    background-color: var(--color-defecto); /* Azul */
+    color: white; /* Texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cabezatabla {
+    background-color: var(--color-defecto); /* Verde */
+    color: white; /* Texto blanco */
+    padding: 10px;
+    text-align: center;
+}
+/* Aplicar bordes curvos a la tabla */
+.table {
+    border-radius: 15px; /* Bordes curvos con un radio de 15px */
+    overflow: hidden; /* Asegura que los bordes curvos se apliquen correctamente */
+    text-align: center; /* Centrar el texto */
+    margin: 0 auto; /* Centrar la tabla en la página */
+}
+
+/* Aplicar bordes curvos a las celdas de la tabla */
+.table th, .table td {
+    border-radius: 0px; /* Bordes curvos con un radio de 15px */
+}
+.tituloo {
+    font-size: 40px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
